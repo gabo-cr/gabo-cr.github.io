@@ -31,6 +31,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 2;
   background: white;
   padding: 15px;
   display: flex;
@@ -48,7 +49,21 @@ header nav ul {
   margin: 0;
 }
 header nav ul li a {
-  padding: 5px;
+  word-spacing: -3px;
+  padding: 5px 10px;
+  color: #000;
+  text-decoration: none;
+  text-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
+  transition: text-shadow 0.2s linear;
+}
+header nav ul li a:hover {
+  text-shadow: 0px 2px 6px rgb(0 0 0 / 60%);
+}
+a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
 }
 main {
   padding: 40px;
@@ -70,8 +85,20 @@ footer {
 footer p {
   margin: 0;
 }
+#about-me p {
+  text-align: justify;
+}
 #projects ul {
   list-style-type: circle;
+}
+#projects ul a {
+  text-decoration: underline;
+  color: #1d8f45;
+  line-height: 1.3;
+  transition: text-shadow 0.2s linear;
+}
+#projects ul a:hover {
+  text-shadow: 0 1px 3px rgb(29 143 69 / 60%);
 }
 .group {
   display: grid;

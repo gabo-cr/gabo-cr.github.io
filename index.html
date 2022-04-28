@@ -22,20 +22,22 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contacts">Contact</a></li>
+          <li><a href="#about-me-anchor">About me</a></li>
+          <li><a href="#projects-anchor">Projects</a></li>
+          <li><a href="#skills-anchor">Skills</a></li>
+          <li><a href="#contacts-anchor">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="about-me">
+        <a class="anchor" id="about-me-anchor"></a>
         <h2>About me</h2>
-        <p>Seniority is not about knowing specific web tools or programming languages. Everyone can learn to use them. Seniority is about the skills and abilities to deeply analyze and solve the problems that you may encounter along the way, using the tools or languages that are a better fit for the job.</p>
+        <p>Creative senior web developer, trying to make my way through the Front-end world. I have worked with several partners in the development of great products in different environments. I am always eager to learn everything from everywhere and from everyone.</p>
         <p>Currently searching for opportunities in the field of Front-End development.</p>
       </section>
       <section id="projects">
+        <a class="anchor" id="projects"></a>
         <h2>Projects</h2>
         <ul>
           <li><a href="https://comprarbtc.labitcoinera.com/" target="_blank">Website to buy BTC for La Bitcoinera</a></li>
@@ -45,6 +47,7 @@
         </ul>
       </section>
       <section id="skills">
+        <a class="anchor" id="skills-anchor"></a>
         <h2>Skills</h2>
         <div class="group">
           <div class="skill">
@@ -110,6 +113,7 @@
         </div>
       </section>
       <section id="contacts">
+        <a class="anchor" id="contacts-anchor"></a>
         <h2>Contact</h2>
         <p>Have an interesting project? I would love to hear about it!</p>
         <div class="group">
@@ -149,9 +153,8 @@
       let canvas = document.getElementById('canvas');
       let done = matrix(canvas, {
         chars: ['0', '1'],
-        //color: '#22b455',
+        color: '#22b455',
         //background: 'rgba(0,0,0, 0.05)',
-        color: '#000',
         background: 'rgba(255,255,255,0.05)',
         exit: false,
         font_size: 20
