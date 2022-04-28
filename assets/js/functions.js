@@ -1,11 +1,9 @@
 //Matrix fuctionality
 const canvas = document.getElementById('canvas');
-matrix(canvas, {
+let matrixCanvas = matrix(canvas, {
   chars: ['0', '1'],
   color: '#22b455',
-  //background: 'rgba(0,0,0, 0.05)',
   background: 'rgba(255,255,255,0.05)',
-  exit: false,
   font_size: 20
 });
 
@@ -68,13 +66,38 @@ const replaceText = (element, lang) => {
 
 const changeLanguage = (event) => {
   option = event.target.value;
-  console.log(option);
 
   const elements = document.querySelectorAll('[data-i18n]');
-  elements.forEach(el => {
-    replaceText(el, option);
-  });
+  elements.forEach(el => replaceText(el, option));
 };
 
 const languageFilter = document.getElementById("language");
 languageFilter.addEventListener('change', changeLanguage);
+
+//Theming fuctionality
+const changeTheme = (event) => {
+  option = event.target.value;
+  const backgroundColor = option === 'light' ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0, 0.05)';
+  if (!document.body.classList.contains(option)) {
+    document.body.classList = [];
+    document.body.classList.add(option);
+
+    //Stop matrix canvas
+    window.dispatchEvent(new KeyboardEvent('keydown', {
+      'key': 'q'
+    }));
+    //Change matrix canvas
+    matrixCanvas.then(() =>{
+      matrixCanvas = matrix(canvas, {
+        chars: ['0', '1'],
+        color: '#22b455',
+        background: backgroundColor,
+        font_size: 20
+      });
+    });
+  }
+};
+
+const themeFilter = document.getElementById("theme");
+themeFilter.addEventListener('change', changeTheme);
+
