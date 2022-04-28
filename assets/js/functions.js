@@ -105,3 +105,16 @@ const changeTheme = (event) => {
 const themeFilter = document.getElementById("theme");
 themeFilter.addEventListener('change', changeTheme);
 
+//Menu fuctionality
+const menuBtn = document.getElementById("menuBtn");
+menuBtn.addEventListener('click', function() {
+  this.classList.toggle("change");
+  document.getElementById("menu").classList.toggle("change");
+});
+
+const menuLinks = document.querySelectorAll('header nav ul li a');
+menuLinks.forEach((menuLink) => {
+  menuLink.addEventListener('click', function() {
+    document.getElementById("menu").classList.toggle("change");
+  });
+});
