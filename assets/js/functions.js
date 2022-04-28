@@ -56,6 +56,10 @@ const languageConfig = {
   contactInfo: {
     en: 'Have an interesting project? I would love to hear about it!',
     es: '¿Tienes un proyecto interesante? ¡Me encantaría escucharte!'
+  },
+  qKey: {
+    en: 'Try pressing q key and then scrolling through the site. Did you feel the power of mastering The Matrix?',
+    es: 'Presiona la tecla q y luego desplázate por el sitio web. ¿Sentiste el poder de dominar La Matrix?'
   }
 };
 
