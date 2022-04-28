@@ -5,12 +5,159 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Ch&aacute;vez Riera</title>
-    <link rel="stylesheet" href="./resources/css/index.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!--Custom css-->
+    <link rel="stylesheet" href="./assets/css/index.css">
   </head>
  
   <body>
-    <h1>Gabriel Chávez Riera</h1>
-    <p>Web developer and writer</p>
+    <canvas id="canvas" role="complementary"></canvas>
+    <header>
+      <div>
+        <h1>Gabriel Chavez Riera</h1>
+        <p>Web developer and writer</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contacts">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about-me">
+        <h2>About me</h2>
+        <p>Seniority is not about knowing specific web tools or programming languages. Everyone can learn to use them. Seniority is about the skills and abilities to deeply analyze and solve the problems that you may encounter along the way, using the tools or languages that are a better fit for the job.</p>
+        <p>Currently searching for opportunities in the field of Front-End development.</p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="https://comprarbtc.labitcoinera.com/" target="_blank">Website to buy BTC for La Bitcoinera</a></li>
+          <li><a href="https://ultrasonicahn.com/" target="_blank">E-learning site for Ultrasónica</a></li>
+          <li><a href="https://www.guayaquilesmidestino.com" target="_blank">Website for Guayaquil es mi destino</a></li>
+          <li><a href="https://www.bordaloecuador.com/" target="_blank">Website for Bórdalo</a></li>
+        </ul>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="group">
+          <div class="skill">
+            <figure>
+              <img src="./assets/images/html-5.png" alt="HTML5 logo">
+              <figcaption>HTML5</figcaption>
+            </figure>
+          </div>
+          <div class="skill">
+            <figure>
+              <img src="./assets/images/css-3.png" alt="CSS3 logo">
+              <figcaption>CSS3</figcaption>
+            </figure>
+          </div>
+          <div class="skill">
+            <figure>
+              <img src="./assets/images/js.png" alt="JavaScript logo">
+              <figcaption>JavaScript</figcaption>
+            </figure>
+          </div>
+          <div class="skill">
+            <figure>
+              <img src="./assets/images/git.png" alt="Git logo">
+              <figcaption>Git</figcaption>
+            </figure>
+          </div>
+          <div class="skill">
+            <figure>
+              <img src="./assets/images/react.png" alt="React logo">
+              <figcaption>React</figcaption>
+            </figure>
+          </div>
+          <div class="skill">
+            <figure>
+              <img src="./assets/images/angular.png" alt="Angular logo">
+              <figcaption>Angular</figcaption>
+            </figure>
+          </div>
+          <div class="skill">
+            <figure>
+              <img src="./assets/images/python.png" alt="Python logo">
+              <figcaption>Python</figcaption>
+            </figure>
+          </div>
+          <div class="skill">
+            <figure>
+              <img src="./assets/images/django.png" alt="Django logo">
+              <figcaption>Django</figcaption>
+            </figure>
+          </div>
+          <div class="skill">
+            <figure>
+              <img src="./assets/images/drupal.png" alt="Drupal logo">
+              <figcaption>Drupal</figcaption>
+            </figure>
+          </div>
+          <div class="skill">
+            <figure>
+              <img src="./assets/images/wordpress.png" alt="WordPress logo">
+              <figcaption>WordPress</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section id="contacts">
+        <h2>Contact</h2>
+        <p>Have an interesting project? I would love to hear about it!</p>
+        <div class="group">
+          <div class="contact">
+            <a href="https://www.linkedin.com/in/gabriel-chavez-riera/" target="_blank">
+              <figure>
+                <img src="./assets/images/linkedin.png" alt="LinkedIn logo">
+                <figcaption>LinkedIn</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="contact">
+            <a href="https://github.com/gabo-cr" target="_blank">
+              <figure>
+                <img src="./assets/images/github.png" alt="GitHub logo">
+                <figcaption>GitHub</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="contact">
+            <a href="mailto:gabrielchavezriera@gmail.com?subject=Hi" target="_blank">
+              <figure>
+                <img src="./assets/images/gmail.png" alt="Gmail logo">
+                <figcaption>Gmail</figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Made by Gabo, May 2022</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/cmatrix"></script>
+    <script>
+      let canvas = document.getElementById('canvas');
+      let done = matrix(canvas, {
+        chars: ['0', '1'],
+        //color: '#22b455',
+        //background: 'rgba(0,0,0, 0.05)',
+        color: '#000',
+        background: 'rgba(255,255,255,0.05)',
+        exit: false,
+        font_size: 20
+      });
+      console.log(done);
+    </script>
   </body>
  
 </html>
