@@ -111,7 +111,7 @@ main {
   transition: all 0.2s linear;
 }
 .dark main {
-  background: #c6ffd0;
+  background: #e4ffe8;
   box-shadow: 0px 0px 6px rgb(198 255 208 / 65%);
 }
 main section:not(:nth-child(1)) h2 {
@@ -219,15 +219,12 @@ footer p {
 }
 
 @media only screen and (max-width: 700px) {
-  canvas {
+  canvas, #qKey {
     display: none;
   }
   body, main, .dark main {
     background-color: #fff;
   }
-  /*body.dark, .dark main {
-    background-color: #c6ffd0;
-  }*/
   main, .dark main {
     box-shadow: none;
     margin: 80px auto 70px;

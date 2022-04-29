@@ -58,8 +58,36 @@ const languageConfig = {
     es: '¿Tienes un proyecto interesante? ¡Me encantaría escucharte!'
   },
   qKey: {
-    en: 'Try pressing q key and then scrolling through the site. Did you feel the power of mastering The Matrix?',
-    es: 'Presiona la tecla q y luego desplázate por el sitio web. ¿Sentiste el poder de dominar La Matrix?'
+    en: 'Try pressing the Q key and then scroll through the site. Did you feel the power of mastering The Matrix? (Press the R key to restart)',
+    es: 'Presiona la tecla Q y luego desplázate por el sitio web. ¿Sentiste el poder de dominar La Matrix? (Presiona la tecla R para reiniciar)'
+  },
+  langLabel: {
+    en: 'Language:',
+    es: 'Idioma:'
+  },
+  langEn: {
+    en: 'English',
+    es: 'Inglés'
+  },
+  langEs: {
+    en: 'Spanish',
+    es: 'Español'
+  },
+  themeLabel: {
+    en: 'Theme:',
+    es: 'Apariencia:'
+  },
+  themeLight: {
+    en: 'Light',
+    es: 'Claro'
+  },
+  themeDark: {
+    en: 'Dark',
+    es: 'Oscuro'
+  },
+  madeBy: {
+    en: 'Made by Gabo, May 2022',
+    es: 'Hecho por Gabo, Mayo de 2022'
   }
 };
 
@@ -79,26 +107,30 @@ const languageFilter = document.getElementById("language");
 languageFilter.addEventListener('change', changeLanguage);
 
 //Theming fuctionality
+let backgroundColor = 'rgba(255,255,255,0.05)';
+const updateCanvas = () => {
+  //Stop matrix canvas
+  window.dispatchEvent(new KeyboardEvent('keydown', {
+    'key': 'q'
+  }));
+  //Change matrix canvas
+  matrixCanvas.then(() =>{
+    matrixCanvas = matrix(canvas, {
+      chars: ['0', '1'],
+      color: '#22b455',
+      background: backgroundColor,
+      font_size: 20
+    });
+  });
+};
+
 const changeTheme = (event) => {
   option = event.target.value;
-  const backgroundColor = option === 'light' ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0, 0.05)';
+  backgroundColor = option === 'light' ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0, 0.05)';
   if (!document.body.classList.contains(option)) {
     document.body.classList = [];
     document.body.classList.add(option);
-
-    //Stop matrix canvas
-    window.dispatchEvent(new KeyboardEvent('keydown', {
-      'key': 'q'
-    }));
-    //Change matrix canvas
-    matrixCanvas.then(() =>{
-      matrixCanvas = matrix(canvas, {
-        chars: ['0', '1'],
-        color: '#22b455',
-        background: backgroundColor,
-        font_size: 20
-      });
-    });
+    updateCanvas();
   }
 };
 
@@ -117,4 +149,11 @@ menuLinks.forEach((menuLink) => {
   menuLink.addEventListener('click', function() {
     document.getElementById("menu").classList.toggle("change");
   });
+});
+
+//R key functionality to restart the canvas
+window.addEventListener('keydown', function(event) {
+  if (event.key.toLowerCase() === 'r') {
+    updateCanvas();
+  }
 });
