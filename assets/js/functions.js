@@ -1,9 +1,11 @@
 //Matrix fuctionality
+const darkBgColor = 'rgba(0,0,0, 0.05)';
+const lightBgColor = 'rgba(255,255,255,0.05)';
 const canvas = document.getElementById('canvas');
 let matrixCanvas = matrix(canvas, {
   chars: ['0', '1'],
   color: '#22b455',
-  background: 'rgba(255,255,255,0.05)',
+  background: darkBgColor,
   font_size: 20
 });
 
@@ -32,7 +34,7 @@ const languageFilter = document.getElementById("language");
 languageFilter.addEventListener('change', changeLanguage);
 
 //Theming fuctionality
-let backgroundColor = 'rgba(255,255,255,0.05)';
+let backgroundColor = darkBgColor;
 const updateCanvas = () => {
   //Stop matrix canvas
   window.dispatchEvent(new KeyboardEvent('keydown', {
@@ -51,7 +53,7 @@ const updateCanvas = () => {
 
 const changeTheme = (event) => {
   option = event.target.value;
-  backgroundColor = option === 'light' ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0, 0.05)';
+  backgroundColor = option === 'light' ? lightBgColor : darkBgColor;
   if (!document.body.classList.contains(option)) {
     document.body.classList = [];
     document.body.classList.add(option);
