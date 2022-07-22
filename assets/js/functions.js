@@ -1,12 +1,28 @@
 //Matrix fuctionality
-const darkBgColor = 'rgba(0,0,0, 0.05)';
-const lightBgColor = 'rgba(255,255,255,0.05)';
+const darkTheme = {
+  bgColor: 'rgba(0,0,0, 0.05)',
+  color: '#22b455',
+  chars: undefined,
+  fontSize: 14
+};
+const lightTheme = {
+  bgColor: 'rgba(255,255,255,0.05)',
+  color: '#000',
+  chars: ['0', '1'],
+  fontSize: 16
+};
+
+let backgroundColor = darkTheme.bgColor;
+let color = darkTheme.color;
+let chars = darkTheme.chars;
+let fontSize = darkTheme.fontSize;
+
 const canvas = document.getElementById('canvas');
 let matrixCanvas = matrix(canvas, {
-  chars: ['0', '1'],
-  color: '#22b455',
-  background: darkBgColor,
-  font_size: 20
+  chars: chars,
+  color: color,
+  background: backgroundColor,
+  font_size: fontSize
 });
 
 //Internationalization fuctionality
@@ -34,7 +50,6 @@ const languageFilter = document.getElementById("language");
 languageFilter.addEventListener('change', changeLanguage);
 
 //Theming fuctionality
-let backgroundColor = darkBgColor;
 const updateCanvas = () => {
   //Stop matrix canvas
   window.dispatchEvent(new KeyboardEvent('keydown', {
@@ -43,17 +58,20 @@ const updateCanvas = () => {
   //Change matrix canvas
   matrixCanvas.then(() =>{
     matrixCanvas = matrix(canvas, {
-      chars: ['0', '1'],
-      color: '#22b455',
+      chars: chars,
+      color: color,
       background: backgroundColor,
-      font_size: 20
+      font_size: fontSize
     });
   });
 };
 
 const changeTheme = (event) => {
   option = event.target.value;
-  backgroundColor = option === 'light' ? lightBgColor : darkBgColor;
+  backgroundColor = option === 'light' ? lightTheme.bgColor : darkTheme.bgColor;
+  color = option === 'light' ? lightTheme.color : darkTheme.color;
+  chars = option === 'light' ? lightTheme.chars : darkTheme.chars;
+  fontSize = option === 'light' ? lightTheme.fontSize : darkTheme.fontSize;
   if (!document.body.classList.contains(option)) {
     document.body.classList = [];
     document.body.classList.add(option);
