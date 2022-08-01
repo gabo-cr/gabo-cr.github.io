@@ -111,7 +111,7 @@ main {
   transition: all 0.2s linear;
 }
 .dark main {
-  background: #e4ffe8;
+  background: #ffffff;
   box-shadow: 0px 0px 6px rgb(198 255 208 / 65%);
 }
 main section:not(:nth-child(1)) h2 {
