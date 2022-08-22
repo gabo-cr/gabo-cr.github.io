@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Typewriter';
+  src: url('../fonts/elegant-typewriter-regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Typewriter';
+  src: url('../fonts/elegant-typewriter-light.ttf');
+  font-weight: lighter;
+}
+@font-face {
+  font-family: 'Typewriter';
+  src: url('../fonts/elegant-typewriter-bold.ttf');
+  font-weight: bold;
+}
+body {
+  background-image: url('/escritor/assets/images/24.jpg');
+  background-repeat: repeat-y;
+  background-size: 100%;
+  color: #ffffff;
+  font-family: 'Typewriter';
+  text-align: center;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+h2 {
+  color: #5cc9f4;
+  font-size: 1.5em;
+}
+
+header {
+  max-width: 480px;
+  width: 100%;
+  margin: 20px auto 60px;
+}
+header a {
+  transition: all 0.2s linear;
+}
+header a:hover {
+  color: #5cc9f4;
+  border-color: #5cc9f4;
+}
+main {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.libro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 40px;
+  margin: 60px 0;
+}
+.libro:nth-child(even) {
+  flex-direction: row-reverse;
+}
+/*.libro {
+  animation: moveY 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+@keyframes moveY {
+  to {
+    transform: translateY(-300px);
+  }
+}*/
+.libro img {
+  width: 250px;
+}
+/*.libro .contenido {
+  animation: moveY 2s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -2s);
+}*/
+.libro .contenido .titulo {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 auto 5px;
+}
+.libro .contenido .autor {
+  font-style: italic;
+  margin: 0 auto 20px;
+}
+.libro .contenido .descripcion {
+  font-size: 1em;
+  font-weight: lighter;
+  line-height: 1.3em;
+}
+.libro .contenido a {
+  font-size: 1em;
+  font-weight: lighter;
+  padding: 3px;
+  border-bottom: 1px solid #ffffff;
+  transition: all 0.2s linear;
+}
+.libro .contenido a:hover {
+  color: #5cc9f4;
+  border-color: #5cc9f4;
+}

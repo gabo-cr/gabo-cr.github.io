@@ -1,55 +1,59 @@
 {
-  "title": {
-    "en": "Gabriel Chavez Riera",
-    "es": "Gabriel Chavez Riera"
+  "source1-1": {
+    "en": "Do you want to know who he is?",
+    "es": "¿Quieres saber quién es él?"
   },
-  "subtitle": {
-    "en": "Senior web developer",
-    "es": "Desarrollador web senior"
+  "source1-2": {
+    "en": "Unfortunately, nobody can be told who Gabriel is...",
+    "es": "Desafortunadamente, a nadie se le puede decir quién es Gabriel..."
   },
-  "aboutMe": {
-    "en": "About me",
-    "es": "Acerca de mí"
+  "source1-3": {
+    "en": "You have to see it for yourself.",
+    "es": "Tienes que verlo por ti mismo."
   },
-  "aboutMeInfo": {
-    "en": "Creative senior web developer, trying to make my way through the Front-end world. I have worked with several partners in the development of great products in different environments. I am always eager to learn everything from everywhere and from everyone. <br><br>Currently searching for opportunities in the field of Front-End development.",
-    "es": "Desarrollador web senior muy creativo, servicial y responsable. He trabajado en un sinnúmero de proyectos en diversos ambientes. Siempre estoy dispuesto a aprender de todo y de todos. <br><br>Actualmente estoy buscando oportunidades en el sector del Desarrollo Front-end."
+  "source2-1": {
+    "en": "This is your chance.",
+    "es": "Esta es tu oportunidad."
   },
-  "projects": {
-    "en": "Projects",
-    "es": "Proyectos"
+  "source2-2": {
+    "en": "After this, everything will change.",
+    "es": "Después de esto, todo cambiará."
   },
-  "project1": {
-    "en": "Website to buy BTC for La Bitcoinera",
-    "es": "Sitio web para comprar BTC para La Bitcoinera"
+  "source2-3": {
+    "en": "You take the blue path, you stay in the Matrix. You see what Gabriel has developed and believe whatever you want to believe.",
+    "es": "Si eliges el azul, te quedas en la Matrix. Ves lo que Gabriel ha desarrollado y crees lo que quieras creer."
   },
-  "project2": {
-    "en": "E-learning site for Ultrasónica",
-    "es": "Sitio de e-learning para Ultrasónica"
+  "source2-4": {
+    "en": "You take the red path, I take you to Wonderland, to show you how deep the rabbit hole goes.",
+    "es": "Si eliges el rojo, te llevo a Wonderland, para mostrarte qué tan profunda es la madriguera del conejo."
   },
-  "project3": {
-    "en": "Website for Guayaquil es mi destino",
-    "es": "Sitio web para Guayaquil es mi destino"
+  "source2-5": {
+    "en": "Remember:",
+    "es": "Recuerda:"
   },
-  "project4": {
-    "en": "Website for Bórdalo",
-    "es": "Sitio web para Bórdalo"
+  "source2-6": {
+    "en": "all I'm offering is the truth, nothing more.",
+    "es": "lo único que te ofrezco es la verdad, nada más."
   },
-  "skills": {
-    "en": "Skills",
-    "es": "Habilidades"
+  "source2-7": {
+    "en": "Remember: all I'm offering is the truth, nothing more.",
+    "es": "Recuerda: lo único que te ofrezco es la verdad, nada más."
   },
-  "contact": {
-    "en": "Contact",
-    "es": "Contacto"
+  "redPillText": {
+    "en": "Take me to Wonderland",
+    "es": "Llévame a Wonderland"
   },
-  "contactInfo": {
-    "en": "Have an interesting project? I would love to hear about it!",
-    "es": "¿Tienes un proyecto interesante? ¡Me encantaría escucharte!"
+  "bluePillText": {
+    "en": "Let me go to the Matrix",
+    "es": "Déjame ir a la Matrix"
   },
-  "qKey": {
-    "en": "Try pressing the Q key and then scroll through the site. Did you feel the power of mastering The Matrix? (Press the R key to restart)",
-    "es": "Presiona la tecla Q y luego desplázate por el sitio web. ¿Sentiste el poder de dominar La Matrix? (Presiona la tecla R para reiniciar)"
+  "skip": {
+    "en": "Skip",
+    "es": "Saltar"
+  },
+  "langLabelLong": {
+    "en": "Select your language:",
+    "es": "Selecciona tu idioma:"
   },
   "langLabel": {
     "en": "Language:",
@@ -63,20 +67,8 @@
     "en": "Spanish",
     "es": "Español"
   },
-  "themeLabel": {
-    "en": "Theme:",
-    "es": "Apariencia:"
-  },
-  "themeLight": {
-    "en": "Light",
-    "es": "Claro"
-  },
-  "themeDark": {
-    "en": "Dark",
-    "es": "Oscuro"
-  },
   "madeBy": {
-    "en": "Made by Gabo, May 2022",
-    "es": "Hecho por Gabo, Mayo de 2022"
+    "en": "Made by Gabo, August 2022",
+    "es": "Hecho por Gabo, Agosto de 2022"
   }
 }
