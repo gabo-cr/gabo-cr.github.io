@@ -88,11 +88,11 @@ type {
   color: #f1f1f1;
 }
 main header {
-  margin: 25px 20px 50px;
+  margin: 25px 20px 40px;
   min-height: 50px;
 }
 main footer {
-  margin: 50px 20px 10px;
+  margin: 40px 20px 10px;
   min-height: 285px;
 }
 #pills {
@@ -105,55 +105,39 @@ main footer {
 #pills div {
   width: 100%;
   padding: 0px 20px;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 #pills a {
   display: inline-block;
-  font-size: 1.4em;
+  border: 1px solid #f1f1f1;
   color: #f1f1f1;
+  padding: 10px 30px;
+  font-size: 1.5em;
   text-decoration: none;
-  border-radius: 20px;
-  padding: 10px 20px;
+  box-shadow: rgba(155, 155, 155, .3) 15px 28px 25px -18px;
   transition: all 0.2s linear;
 }
-
 #pills a.red-pill {
-  background: linear-gradient(-45deg, #5c0000, transparent);
+  border: 1px solid #EE3233;
+  background: rgb(238 50 51 / 10%);
 }
 #pills a.blue-pill {
-  background: linear-gradient(-45deg, #00005c, transparent);
+  border: 1px solid #66A7C5;
+  background: rgb(102 167 197 / 10%);
 }
 #pills div a:hover {
-  transform: translateX(5px);
+  box-shadow: rgba(155, 155, 155, .4) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
 }
-/*.pill {
-  padding: 10px 25px;
+#pills div a.red-pill:hover {
+  background: #EE3233;
 }
-.pill a {
-  transition: all 0.3s ease-out;
+#pills div a.blue-pill:hover {
+  background: #66A7C5;
 }
-#red-pill a {
-  display: block;
-  width: 30px;
-  height: 70px;
-  background: rgb(255,0,0);
-  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(209,0,0,1) 30%, rgba(136,0,0,1) 100%);
-  border-radius: 100% 100% 100% 100% / 60% 60% 60% 60%;
-  box-shadow: 0px 0px 12px #212328 inset;
+#pills div a:focus {
+  box-shadow: rgba(155, 155, 155, .4) 2px 8px 4px -6px;
 }
-#blue-pill a {
-  display: block;
-  width: 30px;
-  height: 70px;
-  background: rgb(0,0,255);
-  background: linear-gradient(90deg, rgb(4 0 255) 0%, rgb(3 0 209) 30%, rgb(9 0 149) 100%);
-  border-radius: 100% 100% 100% 100% / 60% 60% 60% 60%;
-  box-shadow: 0px 0px 12px #212328 inset;
-}
-.pill:hover a {
-  box-shadow: 0px 0px 7px #212328 inset;
-  transform: translateY(-10px);
-}*/
 #footer {
   position: fixed;
   bottom: 0;
@@ -165,8 +149,6 @@ main footer {
   padding: 15px;
   font-size: 0.8em;
   background: rgb(14 32 44 / 30%);
-  /*background: #0e202c;
-  background: linear-gradient(90deg, #0e202c 0%, #1e4258 40%, #3e657d 50%, #1e4258 60%, #0e202c 100%);*/
   color: #ebeae7;
   box-shadow: 0px 0px 7px #000;
   transition: all 0.2s linear;
@@ -177,7 +159,7 @@ main footer {
   grid-gap: 25px;
 }
 #filters select {
-    font-size: 0.95em;
+  font-size: 0.95em;
 }
 #footer p {
   margin: 0;
@@ -202,11 +184,14 @@ button {
   font-size: 1.5em;
   cursor: pointer;
   font-family: 'Share Tech Mono', monospace;
+  box-shadow: rgba(155, 155, 155, .3) 15px 28px 25px -18px;
   transition: all 0.2s linear;
 }
 button:hover {
   background: #f1f1f1;
   color: #1e4258;
+  box-shadow: rgba(155, 155, 155, .4) 2px 8px 8px -5px;
+  transform: translate3d(0, 3px, 0);
 }
 
 /* CURSOR Typewriter */
