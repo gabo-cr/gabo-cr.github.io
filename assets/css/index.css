@@ -286,6 +286,10 @@ button:hover {
     background-size: cover;
     overflow: auto;
   }
+  #pills a {
+    max-width: 215px;
+    line-height: 1.5em;
+  }
 }
 /*@media only screen and (max-width: 480px) {
   
