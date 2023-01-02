@@ -35,6 +35,10 @@
     "en": "Website for Bórdalo",
     "es": "Sitio web para Bórdalo"
   },
+  "project5": {
+    "en": "Website for Amar sin orillas",
+    "es": "Sitio web para el proyecto Amar sin orillas"
+  },
   "skills": {
     "en": "Skills",
     "es": "Habilidades"
@@ -78,5 +82,9 @@
   "madeBy": {
     "en": "Made by Gabo, May 2022",
     "es": "Hecho por Gabo, Mayo de 2022"
+  },
+  "updatedOn": {
+    "en": "Updated on Jan, 2023",
+    "es": "Actualizado en Enero, 2023"
   }
 }

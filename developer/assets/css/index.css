@@ -210,6 +210,7 @@ footer {
   right: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-align: left;
   padding: 15px;
   background: white;
@@ -231,6 +232,8 @@ footer {
 }
 footer p {
   margin: 0;
+  font-size: 0.8em;
+  line-height: 1.2em;
 }
 
 @media only screen and (max-width: 700px) {
@@ -290,5 +293,32 @@ footer p {
   }
   .group {
     grid-template-columns: repeat(5, 1fr);
+  }
+  footer {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+  #filters {
+    display: block;
+  }
+  #filters label {
+    font-size: 1em;
+  }
+  #filters select {
+    font-size: 1em;
+    border-style: inset;
+  }
+  .filter {
+    width: 100%;
+    display: block;
+    margin: 12px 0;
+  }
+  footer p {
+    margin: 12px 0;
+    font-size: 1em;
+  }
+  main, .dark main {
+    margin: 80px auto 15px;
   }
 }

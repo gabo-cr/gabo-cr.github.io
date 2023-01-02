@@ -1,0 +1,3 @@
+# https://gabrielchavezriera.com/robots.txt
+
+Sitemap: https://gabrielchavezriera.com/sitemap.xml
