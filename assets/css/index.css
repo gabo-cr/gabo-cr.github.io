@@ -120,23 +120,23 @@ main footer {
   box-shadow: rgba(155, 155, 155, .3) 15px 28px 25px -18px;
   transition: all 0.2s linear;
 }
-#pills a.red-pill {
-  border: 1px solid #EE3233;
-  background: rgb(238 50 51 / 10%);
-}
 #pills a.blue-pill {
   border: 1px solid #66A7C5;
   background: rgb(102 167 197 / 10%);
+}
+#pills a.green-pill {
+  border: 1px solid #22b455;
+  background: rgb(34 180 85 / 10%);
 }
 #pills div a:hover {
   box-shadow: rgba(155, 155, 155, .4) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
 }
-#pills div a.red-pill:hover {
-  background: #EE3233;
-}
 #pills div a.blue-pill:hover {
   background: #66A7C5;
+}
+#pills div a.green-pill:hover {
+  background: #22b455;
 }
 #pills div a:focus {
   box-shadow: rgba(155, 155, 155, .4) 2px 8px 4px -6px;

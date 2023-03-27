@@ -28,6 +28,32 @@
         "descripcion": "Fábula mítica y relato filosófico que interroga acerca de la relación del ser humano con su prójimo y con el mundo, El Principito concentra, con maravillosa simplicidad, la constante reflexión de Saint-Exupery sobre la amistad, el amor, la responsabilidad y el sentido de la vida.",
         "imagen": "https://imagessl8.casadellibro.com/a/l/t7/98/9788498381498.jpg",
         "link": "https://www.casadellibro.com/libro-principito-colores-originales/9788498381498/1177913"
+      },
+      {
+        "id": 3,
+        "titulo": "El hombre en busca de sentido",
+        "autor": "Viktor E. Frankl",
+        "opinion": "",
+        "descripcion": "En esta obra, Viktor E. Frankl explica la experiencia que le llevó al descubrimiento de la logoterapia. Prisionero, durante mucho tiempo, en los desalmados campos de concentración, él mismo sintió en su propio ser lo que significaba una existencia desnuda. ¿Cómo pudo él que todo lo había perdido, que había visto destruir todo lo que valía la pena, que padeció hambre, frío, brutalidades sin fin, que tantas veces estuvo a punto del exterminio, cómo pudo aceptar que la vida fuera digna de vivirla? El psiquiatra que personalmente ha tenido que enfrentarse a tales rigores merece que se le escuche, pues nadie como él para juzgar nuestra condición humana sabia y compasivamente. Las palabras del doctor Frankl alcanzan un temple sorprendentemente esperanzador sobre la capacidad humana de trascender sus dificultades y descubrir la verdad conveniente y orientadora.",
+        "imagen": "https://imagessl6.casadellibro.com/a/l/t7/26/9788425432026.jpg",
+        "link": "https://www.casadellibro.com/libro-el-hombre-en-busca-de-sentido/9788425432026/2742385"
+      },
+      {
+        "id": 4,
+        "titulo": "La resistencia",
+        "autor": "Ernesto Sabato",
+        "opinion": "",
+        "descripcion": "En estas cinco cartas que Ernesto Sabato dirige a sus lectores ahonda en su análisis de nuestra realidad, empezado con Antes del fin, y aboga por un nuevo humanismo, con \"la convicción de que únicamente los valores del espíritu nos pueden salvar de este terremoto que amenaza la condición humana\". Los progresos de la ciencia y la técnica han transformado al hombre en un simple engranaje de una máquina de producir y consumir. Esta dramática preocupación por lo económico, la idolatría por la técnica y la explotación del hombre nos han llevado a la masificación, a la globalización, a la clonación, al miedo. Es la crisis de toda una concepción del mundo y de la vida. La sociedad virtual en la que vivimos nos aleja del corazón de las cosas, nos hunde en una indiferencia metafísica que nos hace olvidar el latido de la vida. Pero se vislumbran nuevas esperanzas, otras maneras de mirar el entorno, en el arte, en la resistencia de algunos a la uniformización, en los deseos expresados, que nos hacen tomar conciencia de que se puede resistir al poder de la robotización. Y crear nuevos valores humanos, recuperando los afectos, el gozo, el diálogo, la imaginación, la belleza, la fe en nuestro destino. Como en otras épocas de crisis, salvaremos el abismo e inventaremos un nuevo humanismo. Con la misma firme voluntad de dar testimonio sobre su época que ha demostrado siempre, Ernesto Sabato nos pone en guardia contra los peligros que aquejan nuestra cultura, ahora en la más grave encrucijada de su historia. Sin embargo, sus dudas no pueden acallar su \"esperanza demencial\" en el ser humano.",
+        "imagen": "https://imagessl8.casadellibro.com/a/l/t7/98/9788432209598.jpg",
+        "link": "https://www.casadellibro.com/libro-la-resistencia/9788432209598/2627910"
+      },
+      {
+        "id": 5,
+        "titulo": "Crimen y castigo",
+        "autor": "Fiodor Dostoyevski",
+        "opinion": "Dostoyevski me enseñó que aunque todos los hombres seamos capaces de lo peor, también somos capaces (y dignos) de amor y de redención (siempre). Seguir a Raskólnikov a lo largo de esta novela es seguir el camino de la humanidad, donde siempre caben tanto la posibilidad de tocar fondo como la de resurgir de las cenizas.",
+        "imagen": "https://imagessl8.casadellibro.com/a/l/t7/58/9788420665658.jpg",
+        "link": "https://www.casadellibro.com/libro-crimen-y-castigo/9788420665658/1959492"
       }
     ]
   }
