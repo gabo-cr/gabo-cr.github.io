@@ -13,6 +13,9 @@
   src: url('../fonts/elegant-typewriter-bold.ttf');
   font-weight: bold;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   background-image: url('/escritor/assets/images/24.jpg');
   min-height: 500px;
@@ -38,7 +41,7 @@ h2 {
 header {
   max-width: 480px;
   width: 100%;
-  margin: 20px auto 60px;
+  margin: 20px auto 30px;
 }
 header a {
   transition: all 0.2s linear;
@@ -142,6 +145,7 @@ main {
   box-shadow: rgb(111 111 111 / 17%) 0px -23px 25px 0px inset, rgb(111 111 111 / 15%) 0px -36px 30px 0px inset, rgb(111 111 111 / 10%) 0px -79px 40px 0px inset, rgb(111 111 111 / 6%) 0px 2px 1px, rgb(111 111 111 / 9%) 0px 4px 2px, rgb(111 111 111 / 9%) 0px 8px 4px, rgb(111 111 111 / 9%) 0px 16px 8px, rgb(111 111 111 / 9%) 0px 32px 16px;
   max-width: 800px;
   margin: 0 auto 50px;
+  width: 100%;
 }
 .aviso p {
   margin: 0;
@@ -154,4 +158,19 @@ main {
 }
 .aviso a:hover {
   border-bottom: 1px solid #22b455;
+}
+
+@media only screen and (max-width: 700px) {
+  .aviso {
+    margin: 10px 10px 60px;
+    max-width: fit-content;
+  }
+  .libro, .libro:nth-child(even) {
+    flex-direction: column;
+  }
+  .libro {
+    column-gap: 0;
+    row-gap: 15px;
+    margin: 30px 10px 60px;
+  }
 }
